@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Öğrenci Yardım Yataklık Sistemi</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            background-image: url("arkaplan.png");
+            background-repeat: no-repeat;
+            background-position: center 25%;
+            background-size: 60%;
+        }
+
+        .container {
+            margin-top: 120px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        .form {
+            background: rgba(255,255,255,0.9);
+            display: inline-block;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        input {
+            display: block;
+            width: 260px;
+            padding: 12px;
+            margin: 10px auto;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 12px;
+            background-color: #1e88e5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- MEB LOGO -->
+        <img src="meb.png" class="logo" alt="MEB Logo">
+
+        <h1>Öğrenci Yardım Yataklık Sistemi</h1>
+
+        <div class="form">
+            <input type="text" placeholder="Öğrenci Adı">
+            <input type="text" placeholder="Öğrenci Numarası">
+            <input type="text" placeholder="Sınıf">
+
+            <!-- GİRİŞ BUTONU -->
+            <button onclick="girisYap()">Giriş Yap</button>
+        </div>
+
+    </div>
+
+    <script>
+        function girisYap() {
+            // Şimdilik direkt ana sayfaya yönlendiriyoruz
+            window.location.href = "ana_sayfa.html";
+        }
+    </script>
+
+</body>
+</html>
